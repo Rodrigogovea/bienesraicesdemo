@@ -111,10 +111,6 @@ h4 {
     color: var(--blanco);
     text-align: left;
 }
-
-.contenedor{
-    
-} 
 .contenido__header{
    display: flex;
    flex-direction: column;
@@ -178,11 +174,12 @@ h4 {
     }
 }
 
-
-.contenedor-anuncios{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+@media (min-width:768px){
+    .contenedor-anuncios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
 }
 
 .contenido-anuncio{
@@ -233,6 +230,16 @@ h4 {
     border-radius: .5rem;
 }
 
+.boton--small{
+    color: var(--blanco);
+    font-weight: 700;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: block;
+    border-radius: .5rem;
+    width: min-content;
+}
 
 
 .boton--amarillo{
@@ -246,4 +253,56 @@ h4 {
 }
 .boton--verde:hover{
     background-color: var(--amarillo);
+}
+
+.ver-todas,
+.alinear--derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alinear--izquierda{
+    display: flex;
+    justify-content: flex-start;
+}
+.alinear--centrar{
+    display: flex;
+    margin: 0 auto;
+}
+
+.imagen__contacto{
+    background-image: url(../IMG/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 8rem 8rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin--bootom--1rem{
+    margin-bottom: 1rem;
+}
+
+.margin--bottom{
+    margin-bottom: 3rem;
+}
+
+.margin--top{
+    margin-bottom: 3rem;
+}
+.imagen__contacto h2,
+p{
+    color: var(--blanco);
+}
+
+.contenedor--full{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.texto--negro{
+    color: var(--negro);
 }
