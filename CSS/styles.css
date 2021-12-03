@@ -442,3 +442,10 @@ p{
         gap: 2rem;
     }
 }
+
+
+/* seccion descripción anuncio */
+
+.contenido-centrado{
+    max-width: 80rem;
+}
