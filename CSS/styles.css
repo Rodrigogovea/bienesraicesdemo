@@ -154,6 +154,7 @@ h4 {
 
 .footer{
     background-color: var(--negro);
+    margin-top: 2rem;
 }
 .footer__copyright{
     color:var(--blanco);
@@ -199,6 +200,7 @@ h4 {
     background-color: var(--gris);
     border: .5px solid var(--grisObscuro);
 }
+
 
 .iconos-caracteristicas{
     display: flex;
@@ -402,3 +404,41 @@ p{
     }
 }
 
+
+.texto-nosotros blockquote{
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+    padding-left: 1rem 0 3rem 0;
+}
+
+
+.foto_equipo{
+}
+
+.iconos-equipo{
+    
+}
+
+.equipo-icono::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: var(--verde);
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+.equipo__texto--bold{
+    font-weight: 700;
+
+}
+
+@media (min-width:768px){
+    .equipo-icono{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
