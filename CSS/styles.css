@@ -138,6 +138,11 @@ h4 {
     transition: visibility .3s ease-in-out, opacity 0.5s linear;
 }
 
+.navegacion--secundaria{
+    visibility: visible;
+    opacity: 1;
+}
+
 .navegacion__mostrar{
     /* display: block; */
     visibility: visible;
@@ -146,6 +151,13 @@ h4 {
 
 @media (min-width:768px){
     .navegacion{
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .navegacion--secundaria{
         visibility: visible;
         opacity: 1;
         display: flex;
