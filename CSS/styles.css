@@ -121,6 +121,7 @@ h4 {
 .barra{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -130,8 +131,23 @@ h4 {
     }
 }
 
+.navegacion{
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+}
+
+.navegacion__mostrar{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+
 @media (min-width:768px){
     .navegacion{
+        visibility: visible;
+        opacity: 1;
         display: flex;
         gap: 2rem;
         padding: 2rem;
@@ -230,6 +246,7 @@ h4 {
     margin-top: 2.5rem;
     display: block;
     border-radius: .5rem;
+    border: none;
 }
 
 .boton--small{
@@ -252,9 +269,11 @@ h4 {
 }
 .boton--amarillo:hover{
     background-color: var(--verde);
+    cursor: pointer;
 }
 .boton--verde:hover{
     background-color: var(--amarillo);
+    cursor: pointer;
 }
 
 .ver-todas,
@@ -310,9 +329,10 @@ p{
 }
 
 
-.seccion{
+/* .seccion{
 
-}
+} */
+
 @media (min-width:768px){
     .seccion__inferior{
         display: grid;
@@ -336,7 +356,8 @@ p{
 }
 
 .texto__entrada{
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -392,9 +413,9 @@ p{
     display: block;
 }
 
-.testimonio{
+/* .testimonio{
 
-}
+} */
 
 @media (min-width:768px){
     .contenido-nosotros{
@@ -413,12 +434,12 @@ p{
 }
 
 
-.foto_equipo{
+/* .foto_equipo{
 }
 
 .iconos-equipo{
     
-}
+} */
 
 .equipo-icono::after{
     content: '';
@@ -448,4 +469,74 @@ p{
 
 .contenido-centrado{
     max-width: 80rem;
+}
+
+.iconos-resumen{
+    max-width: 40rem;
+
+}
+
+/* seccion formulario */
+
+.formulario{
+
+}
+
+.formulario p{
+    font-size: 1.4rem;
+    color: var(--grisObscuro);
+    margin: 2rem 0 0 0;
+}
+
+.formulario legend{
+    font-size: 2rem;
+    color: var(--grisObscuro);
+}
+
+.formulario label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+.formulario input:not([type="submit"]),
+textarea,
+select{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: var(--blanco);
+    border: 1px solid#e1e1e1;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forma-contacto input[type="radio"]{
+    margin: 0;
+    width: auto;
+}
+
+.formulario textarea{
+    height: 20rem;
+}
+
+
+/* Menú para dispositivos moviles */
+
+@media (min-width:768px){
+    .mobile__menu{
+        display: none;
+        
+    }  
+}
+
+.mobile__menu img{
+    width: 5rem;
 }
