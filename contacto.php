@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 
                 <a href = "inicio.html">
                     <!-- <img src="IMG/logo.svg" alt="Logo de la empresa"> -->
-                    <h1 class="logo">Bienes<span class="logo__bold">Raices</span></h1>
+                    <!-- <h1 class="logo">Bienes<span class="logo__bold">Raices</span></h1>
                 </a>
 
                 <div class="mobile__menu">
@@ -35,8 +35,9 @@
                 </div>
             </div>
             <!-- <h1 class="contenido__header--h1">Venta de casas y residencias de lujo</h1> -->
-        </div>
-    </header>
+        <!-- </div>
+    </header> -->
+    <?php include 'includes/templates/header.php'; ?>
 
     <main class="contenedor">
         <h1>Contacto</h1>
